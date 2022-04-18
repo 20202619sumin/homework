@@ -1,24 +1,75 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>고정 배치</title>
-<style>
-#fixed {
-    position : fixed;
-    bottom: 0;
-    left: 0;
-    width : 100%;
-    background : violet;
-    color : blue;
-}
-</style>
-</head>
+<html lang="en">
+    <head>
+        <style>
+          .container {
+            overflow: hidden;
+            width: 1080px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+          }
+          .gnb {
+            background-color: green;
+            float: left;
+            padding: 8px 0px;
+          }
+          .gnb > li {
+            list-style-type: none;
+            float: left;
+            padding-left: 16px;
+          }
+          .gnb > li:first-child {
+            padding-left: 0px;
+          }
+          .rank {
+            background-color: yellow;
+            float: right;
+            padding: 8px 0px;
+          }
+          .rank > li {
+            list-style-type: none;
+          }
+          .left {
+            float: left;
+            width: 600px; height: 428px;
+            background-color: palevioletred;
+          }
+      
+          .right {
+            float: right;
+            width: 450px; height: 428px;
+            background-color: skyblue;
+          }
+      
+          .footer {
+            height: 80px;
+            background-color: yellow;
+          }
+        </style>
+      </head>
 <body>
-<h3>소연재</h3>
-<hr>
-저는 체조 선수 소연재입니다. 음악을 들으면서 책읽기를 좋아합니다.
-김치 찌개와 막국수 무척 좋아합니다.
-<div id="fixed">소연재 공연은 24일입니다.</div>
+    <div class="container">
+        <h1>Logo</h1>    
+    </div>    
+    <div class="container">
+        <ul class="gnb">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        <ul class="rank">
+            <li>실시간 검색 순위</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left"><h1>HTML</h1>
+        <p>안녕하세요 웹프로그래밍을 수강하고있는 20202619-박수민 학생입니다.</p>
+    </div>
+        <div class="right"><h1>CSS</h1>
+        <p>시험 공부를 열심히 해서 성적을 잘 받아 보겠습니다.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer"><p>Copyright 2022 by Sumin Park</p></div>
+    </div>
 </body>
 </html>
