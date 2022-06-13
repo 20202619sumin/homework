@@ -2,24 +2,32 @@
 <html>
 <head>
 <meta charset="utf-8">
+
 <title>1</title>
 </head>
 <body>
 <script>
 function big(a, b, c) {
-    if (a<b<c) 
-        {
-            return c;
-        }
-         else
-        {
-            return a;
-        }
-    }
+  if(a<b)
+  {
+    return b;
+  
+  }
+  if(b<c)
+  {
+    return c;
+  }
+  else
+  {
+    return a;
+  
+  }
+}
+    
 </script>
 <script>
-   let b = big("625", "555", "754");
-   document.write("가장 큰수=", b);
+    let b = big("625", "555", "754");
+    document.write("가장 큰수=" + b);
 </script>
 </body>
 </html>
